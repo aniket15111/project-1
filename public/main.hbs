@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="main">
+  {{>nav}}
+  <section class="section intro">Welocome user at our donation page</section>
+
+  <!-- ======================================== 
+         Food Bank section
+    ========================================  -->
+  <section class="fbank section">
+    <h2> Food bank</h2>
+    <div class="container grid grid-two-column">
+      <div class="list-left">
+        <h3>Take away:</h3>
+        <form action="/take_away_food" method="POST"><label for="textarea"></label><textarea type="text" id="textarea" name="textarea"
+            rows="10rem"></textarea> <input name="Submit1" type="submit" value="submit" /></form>
+            
+       
+      </div>
+      <div class="container grid mgrid-four-column">
+        <div class="main-list">
+          <h3>NAME</h3>
+          <p> Rice</p>
+          <p> Wheat </p>
+          <p> milk</p>
+          <p> Pulses</p>
+          <h3 style="padding-top: 2rem;">Total</h3>
+
+        </div>
+        <div class="main-list">
+          <h3>Prize</h3>
+          <p> Rs<span id="item-price1">40</span></p>
+          <p> Rs<span id="item-price2">50</span></p>
+          <p> Rs<span id="item-price3">80</span></p>
+          <p> Rs<span id="item-price4">80</span></p>
+        </div>
+        <div class="main-list">
+          <h3>Quantity(kgs)</h3>
+          <button onclick="dnum('textbox1','item1','item-price1','totalfood')">-</button><input type="number" value="0"
+            id="textbox1" /><button onclick="inum('textbox1','item1','item-price1','totalfood')">+</button>
+          <button onclick="dnum('textbox2','item2','item-price2','totalfood')">-</button><input type="number" value="0"
+            id="textbox2" /><button onclick="inum('textbox2','item2','item-price2','totalfood')">+</button>
+          <button onclick="dnum('textbox3','item3','item-price3','totalfood')">-</button><input type="number" value="0"
+            id="textbox3" /><button onclick="inum('textbox3','item3','item-price3','totalfood')">+</button>
+          <button onclick="dnum('textbox4','item4','item-price4','totalfood')">-</button><input type="number" value="0"
+            id="textbox4" /><button onclick="inum('textbox4','item4','item-price4','totalfood')">+</button>
+        </div>
+        <div class="main-list">
+          <h3>Total</h3>
+          <p>Rs<span id="item1">0</span></p>
+          <p>Rs<span id="item2">0</span></p>
+          <p>Rs<span id="item3">0</span></p>
+          <p>Rs<span id="item4">0</span></p>
+          <p>Rs<span id="totalfood">0</span></p>
+          <button style="width:100%">submit</button>
+        </div>
+      </div>
+  </section>
+  <!-- ======================================== 
+         clothes section
+    ========================================  -->
+  <section>
+    <h2> Clothes</h2>
+    <div class="container grid grid-two-column">
+      <div class="list-left">
+        <h3>Take away:</h3><textarea type="text" id="taway" name="tway" rows="10rem"></textarea>
+        <input name="Submit1" type="submit" value="submit" />
+      </div>
+      <div class="container grid mgrid-four-column">
+        <div class="main-list">
+          <h3>NAME</h3>
+          <p> Shirts</p>
+          <p> trousers </p>
+          <p> Sweaters</p>
+          <p> Blankets</p>
+          <h3 style="padding-top: 2rem;">Total</h3>
+
+        </div>
+        <div class="main-list">
+          <h3>Prize</h3>
+          <p> Rs<span id="item-price5">200</span></p>
+          <p> Rs<span id="item-price6">300</span></p>
+          <p> Rs<span id="item-price7">400</span></p>
+          <p> Rs<span id="item-price8">500</span></p>
+        </div>
+        <div class="main-list">
+          <h3>Quantity(kgs)</h3>
+          <button onclick="dnum('textbox5','item5','item-price5','totalclothes')">-</button><input type="number"
+            value="0" id="textbox5" /><button onclick="inum('textbox5','item5','item-price5','totalclothes')">+</button>
+          <button onclick="dnum('textbox6','item6','item-price6','totalclothes')">-</button><input type="number"
+            value="0" id="textbox6" /><button onclick="inum('textbox6','item6','item-price6','totalclothes')">+</button>
+          <button onclick="dnum('textbox7','item7','item-price7','totalclothes')">-</button><input type="number"
+            value="0" id="textbox7" /><button onclick="inum('textbox7','item7','item-price7','totalclothes')">+</button>
+          <button onclick="dnum('textbox8','item8','item-price8','totalclothes')">-</button><input type="number"
+            value="0" id="textbox8" /><button onclick="inum('textbox8','item8','item-price8','totalclothes')">+</button>
+        </div>
+        <div class="main-list">
+          <h3>Total</h3>
+          <p>Rs<span id="item5">0</span></p>
+          <p>Rs<span id="item6">0</span></p>
+          <p>Rs<span id="item7">0</span></p>
+          <p>Rs<span id="item8">0</span></p>
+          <p>Rs<span id="totalclothes">0</span></p>
+          <button style="width:100%">submit</button>
+        </div>
+      </div>
+  </section>
+  <!-- ======================================== 
+         Education section
+    ========================================  -->
+  <section>
+    <h2> Education</h2>
+    <div class="container grid grid-two-column">
+      <div class="list-left">
+        <h3>Take away:</h3><textarea type="text" id="taway" name="tway" rows="10rem"></textarea>
+        <input name="Submit1" type="submit" value="submit" />
+      </div>
+      <div class="container grid mgrid-four-column">
+        <div class="main-list">
+          <h3>NAME</h3>
+          <p> pencil/pen</p>
+          <p> notebook </p>
+          <p> bag</p>
+          {{!-- <p> </p> --}}
+          <h3 style="padding-top: 2rem;">Total</h3>
+
+        </div>
+        <div class="main-list">
+          <h3>Prize</h3>
+          <p> Rs<span id="item-price9">4</span></p>
+          <p> Rs<span id="item-price10">30</span></p>
+          <p> Rs<span id="item-price11">150</span></p>
+          {{!-- <p> Rs<span id="item-price8">500</span></p> --}}
+        </div>
+        <div class="main-list">
+          <h3>Quantity(kgs)</h3>
+          <button onclick="dnum('textbox9','item9','item-price9','totaledu')">-</button><input type="number" value="0"
+            id="textbox9" /><button onclick="inum('textbox9','item9','item-price9','totaledu')">+</button>
+          <button onclick="dnum('textbox10','item10','item-price10','totaledu')">-</button><input type="number"
+            value="0" id="textbox10" /><button onclick="inum('textbox10','item10','item-price10','totaledu')">+</button>
+          <button onclick="dnum('textbox11','item11','item-price11','totaledu')">-</button><input type="number"
+            value="0" id="textbox11" /><button onclick="inum('textbox11','item11','item-price11','totaledu')">+</button>
+          {{!-- <button onclick="dnum('textbox8','item8','item-price8')">-</button><input type="number" value="0"
+            id="textbox8" /><button onclick="inum('textbox8','item8','item-price8')">+</button> --}}
+        </div>
+        <div class="main-list">
+          <h3>Total</h3>
+          <p>Rs<span id="item9">0</span></p>
+          <p>Rs<span id="item10">0</span></p>
+          <p>Rs<span id="item11">0</span></p>
+          <p>Rs<span id="totaledu">0</span></p>
+
+          {{!-- <p>Rs<span id="item8">0</span></p> --}}
+          <button style="width:100%">submit</button>
+        </div>
+      </div>
+  </section>
+  <!-- ======================================== 
+         Medical section
+    ========================================  -->
+  <section>
+    <h2> Medical</h2>
+    <div class="container grid grid-two-column">
+      <div class="list-left">
+        <h3>Take away:</h3><textarea type="text" id="taway" name="tway" rows="10rem"></textarea>
+        <input name="Submit1" type="submit" value="submit" />
+      </div>
+      <div class="container grid mgrid-four-column">
+        <div class="main-list">
+          <h3>NAME</h3>
+          <p> Shirts</p>
+          <p> trousers </p>
+          <p> Sweaters</p>
+          <p> Blankets</p>
+          <h3 style="padding-top: 2rem;">Total</h3>
+
+        </div>
+        <div class="main-list">
+          <h3>Prize</h3>
+          <p> Rs<span id="item-price5">200</span></p>
+          <p> Rs<span id="item-price6">300</span></p>
+          <p> Rs<span id="item-price7">400</span></p>
+          <p> Rs<span id="item-price8">500</span></p>
+        </div>
+        <div class="main-list">
+          <h3>Quantity(kgs)</h3>
+          <button onclick="dnum('textbox5','item5','item-price5')">-</button><input type="number" value="0"
+            id="textbox5" /><button onclick="inum('textbox5','item5','item-price5')">+</button>
+          <button onclick="dnum('textbox6','item6','item-price6')">-</button><input type="number" value="0"
+            id="textbox6" /><button onclick="inum('textbox6','item6','item-price6')">+</button>
+          <button onclick="dnum('textbox7','item7','item-price7')">-</button><input type="number" value="0"
+            id="textbox7" /><button onclick="inum('textbox7','item7','item-price7')">+</button>
+          <button onclick="dnum('textbox8','item8','item-price8')">-</button><input type="number" value="0"
+            id="textbox8" /><button onclick="inum('textbox8','item8','item-price8')">+</button>
+        </div>
+        <div class="main-list">
+          <h3>Total</h3>
+          <p>Rs<span id="item5">0</span></p>
+          <p>Rs<span id="item6">0</span></p>
+          <p>Rs<span id="item7">0</span></p>
+          <p>Rs<span id="item8">0</span></p>
+          <button style="width:100%">submit</button>
+        </div>
+      </div>
+  </section>
+
+
+  {{>footer}}
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

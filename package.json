@@ -1,0 +1,25 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "charity website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aniket Kaushal",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "nodemailer": "^6.9.2",
+    "requests": "^0.3.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

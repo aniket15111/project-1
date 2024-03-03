@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  {{>nav}}
+    <section class="section section-contact" id="contact" style="margin:20rem">
+    <div class="container">
+      <h2 class="contact-heading" style="padding-left: 2rem;">PAY FOR DONATION....</h2>
+    </div>
+    <div class="section-contact-main contact-container">
+      <form action="/donate" method="POST">
+        <div class="grid grid-two-column">
+          <div>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="User Name">
+          </div>
+
+          <div>
+            <label for="phone"></label>
+            <input type="text" name="phone" id="phone" placeholder="phone number">
+          </div>
+          
+          <div>
+          <label for="amount"></label>
+          <input name="amount" id="amount" placeholder="Amount:"></input>
+        </div><div><input type="submit" name="submit" id="submit" class="btn" value="PAY NOW"></div>
+        </div>
+
+     
+        
+          <div>
+            <label for="email"></label>
+            <input type="text" name="email" id="email" placeholder="data@mail.com">
+          </div>
+      </form>
+    </div>
+  </section>
+  {{>footer}}
+</body>
+</html>
+
+
+ 
